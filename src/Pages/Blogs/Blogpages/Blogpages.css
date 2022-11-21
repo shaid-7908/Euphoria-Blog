@@ -1,0 +1,51 @@
+.blogmainContainer{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10px;
+   
+   }
+   .blogCatagorieSelection{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .blogCatagoriestoSelect{
+       
+     margin: 5px 5px 10px 30px;
+   }
+   .blogContentContainer{
+    padding: 10px;
+   }
+   .blogData{
+    display: flex;
+    padding: 10px;
+   }
+   .blogImage{
+    flex: 40%;
+   
+   }
+   .blogImage img{
+    width: 100%;
+    object-fit: cover;
+   }
+   .blogInfo{
+    flex: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   }
+   .blogTitle{
+    font-weight: bolder;
+    font-size: 30px;
+   }
+   .blogReadMore{
+    border: 1px solid gray;
+    width: 100px;
+    padding: 10px;
+    background-color: aquamarine;
+   }
+   @media (max-width:400px){
+    .blogData{
+      flex-direction: column;
+    }
+   }

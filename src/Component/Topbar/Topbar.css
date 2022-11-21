@@ -1,0 +1,182 @@
+.TopbarMainContainer{
+    display: flex;
+    position: sticky;
+    top:0;
+    background-color: white;
+    height: 10vh;
+    align-items: center;
+    z-index: 1000;
+}
+.menubutton{
+    display: none;
+    position: absolute;
+    right:0;
+    z-index: 2000;
+}
+.TopbarLeft{
+flex:20%;
+
+}
+.TopbarLeft{
+font-weight: bold;
+padding: 10px;
+font-family: 'Bungee Spice', cursive;
+}
+/*  CENTER      */
+.TopbarCenter{
+flex:60%;
+}
+
+.TopbarUlList{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    justify-content: space-around;
+}
+.links{
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: black;   
+}
+.TopbarListItems{
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+.TopbarListItems::after{
+    content: "";
+    background-color: #fb385c;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.TopbarListItems:hover::after{
+    width: 100%;
+}
+
+/*Right side            */
+.TopbarRight{
+    flex:20%;
+    display: flex;
+    justify-content: space-around;
+    
+    }
+    .link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold
+    }
+    .TopbarLogin{
+        border: 0.5px solid gray;
+        padding: 5px 10px;
+        position: relative;
+       
+        font-family: 'Lato', sans-serif;
+    }
+    .TopbarLogin::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0;
+        background-color: gray;
+        left: 0;
+        bottom: 0;
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    .TopbarLogin:hover::after{
+        width: 100%;
+    }
+    .TopbarRegister{
+        border: 0.5px solid gray;
+        padding: 5px 10px;
+        position: relative;
+        font-family: 'Lato', sans-serif;
+    }
+    .TopbarRegister::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0;
+        background-color: gray;
+        left: 0;
+        bottom: 0;
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    .TopbarRegister:hover::after{
+        width: 100%;
+    }
+
+    @media (max-width:400px){
+     .TopbarMainContainer{
+        flex-direction: column;
+        position: relative;
+     }
+     .TopbarCenter{
+        background-color:white;
+        width: 100vw;
+        transition: 0.3s ease-in-out;
+      
+    
+       transform: translateX(0px);
+     }
+     .TopbarUlList{
+        flex-direction: column;
+        
+     }
+     .TopbarListItems{
+        padding: 10px;
+     }
+     .TopbarListItems::after{
+        display: none;
+     }
+     .TopbarRight{
+        flex-direction: column;
+        width: 100vw;
+        background-color: white;
+        text-align: center;
+        
+        top:30vh;
+        transition: 0.3s ease-in-out;
+        
+     }
+     .TopbarLogin{
+        border: none;
+       
+     }
+     .TopbarRegister{
+        border: none;
+     }
+     .TopbarCenterinactive{
+       
+        background-color:white;
+        width: 100vw;
+        
+      
+       transform: translateX(-400px);
+     }
+     .TopbarRightinactive{
+        
+        flex-direction: column;
+        width: 100vw;
+        background-color: white;
+        text-align: center;
+      
+      
+        transform: translateX(-400px);
+     }
+     .menubutton{
+        display: block;
+        padding: 10px;
+        font-size: larger;
+     }
+    }

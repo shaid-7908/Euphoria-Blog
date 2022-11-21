@@ -1,0 +1,34 @@
+.blogmainContainer{
+ width: 100vw;
+ height: 100vh;
+ margin-top: 10px;
+
+}
+.blogCatagorieSelection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blogCatagoriestoSelect{
+    
+  margin: 5px 5px 10px 30px;
+}
+.blogTechnology{
+    
+  padding: 10px 5px;
+}
+.blogmovies{
+  
+    padding: 10px 5px;
+}
+.blogsports{
+  
+    padding: 10px 5px;
+}
+.blogbuisness{
+   
+    padding: 10px 5px;
+}
+.blogdiscovery{
+ 
+    padding: 10px 5px;
+}

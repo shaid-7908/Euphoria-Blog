@@ -1,0 +1,57 @@
+.footer{
+    margin-top: 50px;
+    height: 30vh;
+    background-color: #8a8988;
+    display: flex;
+    padding: 10px;
+}
+.footerLeft{
+    flex:1;
+    padding: 0 5px;
+}
+.footerCenter{
+    flex:1;
+   
+
+}
+.footerMenu{
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid black;
+    margin: 0;
+    padding: 5px;
+  list-style: none;
+}
+.footerMenueItems{
+    
+    width: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.footerMenueItems:hover{
+    transform: scale(1.2) translateX(20px);
+}
+.footerRight{
+    flex:1;
+    
+}
+.footerRightDevInfo{
+    display: flex;
+    border-left: 1px solid black;
+    flex-wrap: wrap;
+    margin: 0;
+  padding: 5px;
+  list-style: none;
+}
+.footerRightDevNames{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+@media (max-width:400px){
+    .footer{
+        flex-direction: column;
+        height: fit-content;
+    }
+}
